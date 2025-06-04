@@ -17,8 +17,11 @@ This project implements a **basic preemptive RTOS-style scheduler** from scratch
 
 Memory layout separates stacks for each task and scheduler:
 
-SRAM calculations
- SRAM_START = 0x20000000U  
+<pre>
+
+SRAM calculations: 
+ 
+SRAM_START = 0x20000000U  
  SRAM_SIZE  = (20 * 1024)  
  SRAM_END   = (SRAM_START + SRAM_SIZE)
 
@@ -40,10 +43,10 @@ SRAM calculations
 +--------------------+
 | Scheduler Stack    |
 +--------------------+
-| Other space of RAM |
+| Remaining RAM space|
 +--------------------+    <-- SRAM START (0x20000000)
 
-
+</pre>
 
 ##  Architecture
 
